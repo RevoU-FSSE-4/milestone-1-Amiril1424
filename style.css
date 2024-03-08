@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Rubik";
-    src: url(./_Assets/Rubik/Rubik-VariableFont_wght.ttf);
+    font-family: "Roboto";
+    src: url(./_Assets/Roboto/Roboto-Regular.ttf);
 }
 
 /* CSS for styling Horizontal Navbar */
@@ -13,10 +13,11 @@
 body {
     --color1: #353535;
     --color2: white;
-    font-family: "Rubik", serif;
+    font-family: "Roboto", serif;
     background-color: rgb(248, 247, 247);
     color: #5a5a5a;
     transition: 0.5s;
+    font-size: 18px;
 }
 
 /* Navigation */
@@ -288,7 +289,55 @@ img {
     }
 }
 
+.header-text {
+    color: white;
+    background-color: #16025c;
+    opacity: 0.9;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 40px;
+    transition: font-size 2s, color 2s, background-color 2s;
+    /* transition-property: background-color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    padding-bottom: 10px; */
 
+}
+
+.header-text:hover {
+    transition: font-size 4s, color 3s;
+    font-size: 24px;
+    color: black;
+    background-color: rgb(13, 209, 216);
+}
+
+.header-text h1 {
+    animation-duration: 2s;
+    animation-name: h1-animation;
+}
+
+@keyframes h1-animation {
+    from {
+        margin-bottom: 100px;
+    }
+
+    to {
+        margin-bottom: 0x;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .slider {
+        display: none;
+    }
+}
 
 
 /* Main Content */
@@ -310,7 +359,7 @@ img {
     text-align: center;
     display: grid;
     grid-template-columns: 500px 500px;
-    grid-template-rows: 410px 410px;
+    grid-template-rows: 450px 450px;
     grid-gap: 20px;
 
 }
@@ -367,7 +416,7 @@ img {
 
 /* Grid Section 2 Program Training */
 .container-program h1 {
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(59, 137, 168);
 }
 
@@ -543,15 +592,16 @@ img {
     padding-bottom: 20px;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 #ig-containt img {
-    width: 75px;
+    width: 50px;
 }
 
 #ig-containt h3 {
     position: relative;
-    font-size: 40px;
+    font-size: 3vw;
     padding-left: 10px;
 }
 
@@ -660,6 +710,68 @@ img {
 }
 
 
+/* Lelagiltas */
+.H1-legalitas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 3vw;
+}
+
+
+.image-legalitas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+
+.image-legalitas img {
+    border-radius: 50px;
+}
+
+
+/* Video Youtube */
+.head-section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 3vw;
+}
+
+.video-Food-Safety {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.video-Food-Safety iframe {
+    width: 50%
+}
+
+
+
 
 /* section 5 (User form)*/
 
@@ -667,7 +779,13 @@ img {
     margin-bottom: 10px;
 }
 
-h2 {
+#user-form {
+    background-image: url(./_Assets/Food-Safety\ Background.jpeg);
+    background-size: contain;
+
+}
+
+.register h2 {
 
     display: flex;
     flex-direction: column;
@@ -678,7 +796,7 @@ h2 {
     right: 0;
     text-align: center;
     padding-top: 60px;
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 fieldset {
@@ -714,6 +832,66 @@ button[type="submit"] {
     cursor: pointer;
 }
 
+
+/* Media Query for font size */
+
+@media screen and (max-width:1400px) {
+    .register h2 {
+        font-size: 5vw;
+    }
+
+    .head-section3 {
+        font-size: 5vw;
+    }
+
+    .H1-legalitas {
+        font-size: 5vw;
+    }
+
+    #ig-containt h3 {
+        font-size: 5vw;
+    }
+}
+
+
+
+
+@media screen and (max-width:1000px) {
+    .register h2 {
+        font-size: 6vw;
+    }
+
+    .head-section3 {
+        font-size: 6vw;
+    }
+
+    .H1-legalitas {
+        font-size: 6vw;
+    }
+
+    #ig-containt h3 {
+        font-size: 6vw;
+    }
+}
+
+
+/* @media screen and (min-width:800px) {
+    .register h2 {
+        font-size: 5vw;
+    }
+
+    .head-section3 {
+        font-size: 5vw;
+    }
+
+    .H1-legalitas {
+        font-size: 5vw;
+    }
+
+    #ig-containt h3 {
+        font-size: 5vw;
+    }
+} */
 
 
 /* Whatsapp */
@@ -840,7 +1018,7 @@ footer {
 .footer .footer-about {
     line-height: 20px;
     color: #92999f;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: normal;
     margin: 0px;
 }

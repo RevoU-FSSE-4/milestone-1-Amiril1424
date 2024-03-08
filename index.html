@@ -37,37 +37,45 @@
         </ul>
     </nav>
     <!-- Slide show image -->
-    <div class="slideshow-container">
+    <header>
+        <div class="slideshow-container">
 
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="./_Assets/Flyer-web1-2.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./_Assets/Flyer-web1-2.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./_Assets/Flyer-web3-2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./_Assets/Flyer-web4-2.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
         </div>
+        <br>
 
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="./_Assets/Flyer-web3-2.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="./_Assets/Flyer-web4-2.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+        <!--  -->
+        <div class="header-text">
+            <h1>Set-Up Consulting Present</h1><br>
+            <h3><em>"Grow Up Together"</em></h3>
         </div>
+    </header>
 
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
 
     <!-- Content -->
     <main>
@@ -128,8 +136,7 @@
                     <h1>HACCP Training</h1>
                     <p>Set-Up Consulting is experts in providing HACCP training. HACCP is a management system in which
                         food safety is addressed through the analysis and control of biological, chemical, and physical
-                        hazards from raw material production, procurement and handling, to manufacturing, distribution
-                        and consumption of the finished product.</p>
+                        hazards from raw material production until end process.</p>
                 </div>
                 <div class="Food-Handler">
                     <img src="./_Assets/food-handler.png" alt="Food Handler">
@@ -151,8 +158,7 @@
                     <h1>Food Safety Internal Audit</h1>
                     <p>Set-Up Consulting is experts in providing Food Safety Internal Audit training. Internal food
                         safety audits are systematic and independent assessments of your food safety practices,
-                        procedures and records. They are performed by your own staff or external consultants who are
-                        trained and qualified to audit your food safety system</p>
+                        procedures and records. </p>
                 </div>
                 <!-- End container Program -->
             </div>
@@ -270,6 +276,36 @@
             </div>
         </section>
 
+        <!-- Section for responsive picture -->
+        <section>
+            <!-- Responsive picture -->
+            <h1 class="H1-legalitas">Complete Your Product Legality</h1>
+            <figure>
+                <picture class="image-legalitas">
+                    <source media="(max-width:600px)" srcset="./_Assets/Bussines_Legal(500).png">
+                    <source media="(max-width:700px)" srcset="./_Assets/Bussines_Legal(600).jpg">
+                    <source media="(max-width:800px)" srcset="./_Assets/Bussines_Legal(700).jpg">
+                    <source media="(max-width:900px)" srcset="./_Assets/Bussines_Legal(800).jpg">
+                    <source media="(max-width:1000px)" srcset="./_Assets/Bussines_Legal(900).jpg">
+                    <img src="./_Assets/Bussines_Legal.png" alt="Legalitas">
+
+                </picture>
+            </figure>
+        </section>
+
+
+        <!-- Section 6 video youtube -->
+        <section>
+            <h1 class="head-section3">Food Safety Implementation!</h1>
+            <div class="video-Food-Safety">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QBts_xSV2wo?si=wb3Zgi_oa_8sgDrt"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--  -->
         <section id="sect-5">
             <div class="register">
                 <h2>Register Form</h2>
@@ -310,6 +346,10 @@
                                 <!-- option 5 -->
                                 <input type="radio" id="audit" name="audit" value="audit">
                                 <label for="audit">Food Safety Internal Audit</label><br><br>
+
+                                <!-- Favorit color -->
+                                <label for="favcolor">Select your favorite color:</label>
+                                <input type="color" id="favcolor" name="favcolor" value="#2dd5e1"><br><br>
 
                                 <p>Tell us what do you think about Food Safety?</p>
                                 <textarea id="text-ciamis" name="text-ciamis" rows="4" cols="50"></textarea><br>

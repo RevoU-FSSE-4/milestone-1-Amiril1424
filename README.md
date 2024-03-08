@@ -1,5 +1,5 @@
 
-# This is the code of responsive HTML as Assignment study in week 2
+# This is the code of responsive HTML as Assignment study in week 5
 This is an assignment for "responsive HTML as Assignment study of Milestone in Week 4"
 ***
 # Description
@@ -12,6 +12,8 @@ We welcome any and all contributions! Here are some ways you can get started:
 2. HACCP Training
 3. Halal Training
 4. Legal Product Compliance
+
+In this website you can join as member of Food safety goups with join and submit your form
 ***
 
 # Skill contain in web:
@@ -28,11 +30,9 @@ We welcome any and all contributions! Here are some ways you can get started:
     - Use relative units (such as persentages or ems) for sizing elements to maintain a consistent layout across devices.
     - Adjust typoghrapy and font size to ensure readability on varoius screen size.
     - Optimize images and other media for different resolutions and device capabilities.
-3. Documnetation
-    - Create a readme file that provides clear instruction on how to set up and run the project
-    - include Screenshots of the different stages of development, showcasing the process of building the page.
-    - Clearly explain any dependencies in project
-    - Document any specific design choices or considerations made during the development process
+3. Documentation
+    - Describe the page which created
+    - Remember to include website in the Redme.md
 4. Deployment
     - Publish the company profile page to a custom domain.
     - Set up and configure a live server or hosting platform for the website deployment
@@ -47,4 +47,4 @@ This is the website of set-up consulting display
 # Code made by Amiril Mukminin
 
 
-**Result Sample Website** ([https://setupconsulting.web.id/](https://setupconsulting.web.id/))
+**Result Sample Website** ([https://set-up.my.id/](https://set-up.my.id/))
